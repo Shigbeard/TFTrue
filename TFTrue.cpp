@@ -356,7 +356,7 @@ void CTFTrue::ServerActivate( edict_t *pEdictList, int edictCount, int clientMax
 // This function will create an accurate game name for us
 void CTFTrue::UpdateGameDesc()
 {
-	V_snprintf(m_szGameDesc, sizeof(m_szGameDesc), "TFTrue %s ", tftrue_gamedesc.GetString());
+	V_snprintf(m_szGameDesc, sizeof(m_szGameDesc), " %s ", tftrue_gamedesc.GetString());
 
 	if(steam.SteamGameServer())
 	{
